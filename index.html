@@ -1,1 +1,65 @@
-Hello world
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<body>
+    <p>
+  	  <b>Priebeh riešenia experimentu:</b>
+  	</p>
+	<p>Riešenie úlohy je potrebné doimplementovať vkladanie do binárneho vyhľadávacieho stromu. Na implementovanie je možné vybrať akýkoľvek jazyk zo zoznamu 		prístupných. Pri riešení úlohy je dovolené používať internetové zdroje v ľubovoľnom rozsahu. Riešenie sa považuje za úspešné ak zo zadaného vstupu dostanete 		ukážkový výstup (viď zadanie). 
+	</p>
+	<p>
+		<ol>
+			<li>Chodte na stránku https://www.codechef.com/ide</li>
+			<li>Zo zoznamu vyberte programovací jazyk v ktorom chcete riešiť úlohu</li>
+			<li>Začnite riešiť (pri riešení je možné použiť aj funkciu "Custom input", ktorú možete použiť na načítavanie vstupu)</li>
+		</ol>	
+	</p>
+	<p>
+		<b>Zadanie úlohy:</b>
+	</p>
+	<p>Uvažujte binárny vyhľadávací strom. Na vstupe je daných niekoľko čísel, ktoré postupne vkladáte do tohto 
+	   stromu. Strom nevyvažujte. Pre každé číslo zistite, ako hlboko je v strome uložené. Ak sa číslo v strome 
+	   nenachádza, tak ho najprv pridajte do stromu.
+	   Špecifikácia vstupu : Na vstupe je niekoľko čísel, ktoré postupne vkladáte do stromu.Čísla sú oddelené 
+	   medzerou alebo novým riadkom.
+	   Špecifikácia výstupu : Pre každé číslo na vstupe vypíšte jedno číslo -- ako hlboko je dané číslo uložené 
+	   v strome.
+   </p>
+   <p>Ukážka vstupu: "5 3 2 1 3"</p>			
+   <p>Výstup pre ukážkový vstup : "0 1 2 3 1"</p>
+   <p>Návod: Simulujte jednoduché pridávania do binárneho vyhľadávacieho stromu. Pri pridávaní si pamätajte 
+	  aktuálnu hĺbku v strome, kde sa práve nachádzate. Ak zistíte, že vkladané číslo sa už v strome nachádza, 
+	  alebo sa dostanete na spodok (do listu) stromu a vytvoríte nový uzol, vypíšte aktuálnu hĺbku. Dostupná je kostra riešenia, implementovaná v jazyku C.
+	  V prípade riešenia úlohy v jazyku C si môžete kostru riešenia vložiť do kompilátora.
+  </p>
+  <p>
+	  <b>Kostra riešenia (jazyk C):</b></p>
+  <xmp>
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct tree{
+	int hodnota;
+	struct tree *lchild;
+	struct tree *rchild;
+}TREE;
+
+TREE *insert(int cislo, TREE *root){
+	
+	/*Sem vložte svoje riešenie*/
+}
+
+int main(){
+	int cislo;
+	TREE *root = NULL;
+	
+	while (scanf("%d", &cislo) > 0){
+		root = insert(cislo, root);
+	}
+	
+	return 0;
+}
+  </xmp>
+</body>
+</html>
