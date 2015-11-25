@@ -1,17 +1,29 @@
 <!DOCTYPE html>
 <html>
 <meta charset="utf-8">
+<head>
+	<style>
+content {
+    width: 1000px;
+}
+</style>
+</head>
 <body>
+	<div class="content">
     <p>
-  	  <b>Priebeh riešenia experimentu:</b>
+  	  <b>Pokyny pre vás:</b>
   	</p>
-	<p>Riešenie úlohy je potrebné doimplementovať vkladanie do binárneho vyhľadávacieho stromu. Na implementovanie je možné vybrať akýkoľvek jazyk zo zoznamu 		prístupných. Pri riešení úlohy je dovolené používať internetové zdroje v ľubovoľnom rozsahu. Riešenie sa považuje za úspešné ak zo zadaného vstupu dostanete 		ukážkový výstup (viď zadanie). 
+	<p>V tejto úlohe budete implementovať vkladanie do binárneho vyhľadávacieho stromu.
+	Môžete si zvoliť ľubovoľný z dostupných jazykov.
+	Pri riešení úlohy môžete používať internetové zdroje v ľubovoľnom rozsahu.
+	Riešenie sa považuje za úspešné ak pre vzorový vstup získate ukážkový výstup (viď zadanie). 
 	</p>
 	<p>
 		<ol>
-			<li>Chodte na stránku https://www.codechef.com/ide</li>
-			<li>Zo zoznamu vyberte programovací jazyk v ktorom chcete riešiť úlohu</li>
-			<li>Začnite riešiť (pri riešení je možné použiť aj funkciu "Custom input", ktorú možete použiť na načítavanie vstupu)</li>
+			<li>Navštívte stránku https://www.codechef.com/ide</li>
+			<li>Zvoľte si programovací jazyk, v ktorom chcete riešiť úlohu</li>
+			<li>Začnite riešiť (pri riešení môžete použiť funkciu "Custom input", ktorá
+			umožňuje zadanie štandardného vstupu pre program)</li>
 		</ol>	
 	</p>
 	<p>
@@ -19,9 +31,9 @@
 	</p>
 	<p>Uvažujte binárny vyhľadávací strom. Na vstupe je daných niekoľko čísel, ktoré postupne vkladáte do tohto 
 	   stromu. Strom nevyvažujte. Pre každé číslo zistite, ako hlboko je v strome uložené. Ak sa číslo v strome 
-	   nenachádza, tak ho najprv pridajte do stromu.
+	   nenachádza, tak ho najprv pridajte do stromu.<br/>
 	   Špecifikácia vstupu : Na vstupe je niekoľko čísel, ktoré postupne vkladáte do stromu.Čísla sú oddelené 
-	   medzerou alebo novým riadkom.
+	   medzerou alebo novým riadkom.<br/>
 	   Špecifikácia výstupu : Pre každé číslo na vstupe vypíšte jedno číslo -- ako hlboko je dané číslo uložené 
 	   v strome.
    </p>
@@ -29,13 +41,13 @@
    <p>Výstup pre ukážkový vstup : "0 1 2 3 1"</p>
    <p>Návod: Simulujte jednoduché pridávania do binárneho vyhľadávacieho stromu. Pri pridávaní si pamätajte 
 	  aktuálnu hĺbku v strome, kde sa práve nachádzate. Ak zistíte, že vkladané číslo sa už v strome nachádza, 
-	  alebo sa dostanete na spodok (do listu) stromu a vytvoríte nový uzol, vypíšte aktuálnu hĺbku. Dostupná je kostra riešenia, implementovaná v jazyku C.
+	  alebo sa dostanete na spodok (do listu) stromu a vytvoríte nový uzol, vypíšte aktuálnu hĺbku. Dostupná je
+	  kostra riešenia, implementovaná v jazyku C.
 	  V prípade riešenia úlohy v jazyku C si môžete kostru riešenia vložiť do kompilátora.
   </p>
   <p>
 	  <b>Kostra riešenia (jazyk C):</b></p>
   <xmp>
-#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -61,5 +73,6 @@ int main(){
 	return 0;
 }
   </xmp>
+  </div>
 </body>
 </html>
